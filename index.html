@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lautaro Martínez — Paid Media Manager</title>
+<meta name="description" content="Paid Media Manager en Digitalmix. Meta Ads, Google Ads, GA4 y GTM: estrategia, medición y optimización para ecommerce y generación de leads.">
+<meta name="theme-color" content="#0F172A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lautaro Martínez — Paid Media Manager">
+<meta property="og:description" content="Paid Media Manager en Digitalmix. Meta Ads, Google Ads, GA4 y GTM: estrategia, medición y optimización para ecommerce y generación de leads.">
+<meta property="og:image" content="/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='16 20 160 134'%3E%3Cpath fill='%23F8FAFC' d='M20 30L38 40V122H84L95 140H20Z'/%3E%3Cpath fill='none' stroke='%23F8FAFC' stroke-width='18' stroke-miterlimit='6' d='M65 116V56L101 94L151 44'/%3E%3Cpath fill='%23F8FAFC' d='M136 80.3L154 62.3V150H136Z'/%3E%3Cpath fill='none' stroke='%23F8FAFC' stroke-width='18' d='M112 117L145 84'/%3E%3Cpath fill='none' stroke='%232563EB' stroke-width='18' d='M101 94L151 44'/%3E%3Cpath fill='%232563EB' d='M169.8 25.2L164.1 59.1L135.9 30.9Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@300..800&amp;family=Geist+Mono:wght@400..600&amp;display=swap">
+<style>
+body{margin:0;background:#0F172A}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+a{color:inherit}a:hover{color:inherit}
+.pf{--bg:#0F172A;--bg2:#121C32;--tx:#F8FAFC;--mu:#94A3B8;--di:#64748B;--ln:rgba(248,250,252,.1);--gr:#22C55E;--bl:#2563EB;--blh:#1D4ED8;--fd:"Space Grotesk","Helvetica Neue",Arial,sans-serif;--fb:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--fm:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;--eo:cubic-bezier(.23,1,.32,1);--eio:cubic-bezier(.77,0,.175,1);--edr:cubic-bezier(.32,.72,0,1);--es:cubic-bezier(.25,.1,.25,1);position:relative;background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
+.pf *,.pf *::before,.pf *::after{box-sizing:border-box}
+.pf a{text-decoration:none}
+.pf ::selection{background:var(--gr);color:var(--bg)}
+.pf :focus-visible{outline:2px solid var(--bl);outline-offset:3px;border-radius:4px}
+.pf button{font:inherit;color:inherit}
+.pf h1,.pf h2,.pf h3,.pf p,.pf ul,.pf ol,.pf figure,.pf blockquote{margin:0;padding:0}
+.pf ul,.pf ol{list-style:none}
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding-inline:clamp(20px,4.4vw,64px)}
+.mono{font-family:var(--fm);font-size:11.5px;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+.h2{font-family:var(--fd);font-weight:600;font-size:clamp(34px,4.6vw,68px);letter-spacing:-.045em;line-height:1.02;max-width:15ch}
+.lm{display:block;overflow:visible}
+.skip{position:fixed;left:16px;top:-80px;z-index:100;background:var(--bl);color:var(--tx);padding:12px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.skip:focus{top:16px}
+
+/* reveal */
+.rv{opacity:0;transform:translate3d(0,12px,0)}
+.in .rv{opacity:1;transform:none;transition:opacity .8s var(--eo),transform .8s var(--eo)}
+.ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.li{display:block;transform:translate3d(0,108%,0)}
+.in .li{transform:none;transition:transform 1s var(--eo)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;border-bottom:1px solid transparent;transition:background-color .25s var(--es),border-color .25s var(--es)}
+.nav.solid{background:rgba(15,23,42,.92);border-bottom-color:var(--ln)}
+.nav-in{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:inline-flex;align-items:center;gap:11px;min-height:44px}
+.logo .lm{width:30px;height:auto;color:var(--tx)}
+.logo span{font-family:var(--fd);font-weight:600;font-size:16px;letter-spacing:-.015em;line-height:1}
+.nav-r{display:flex;align-items:center;gap:clamp(20px,2.6vw,40px)}
+.nl{display:inline-flex;align-items:center;min-height:44px;font-size:14.5px;font-weight:500;color:var(--mu);transition:color .15s var(--es)}
+.nl.on,.nl-cta{color:var(--tx)}
+.nl-cta{gap:8px}
+.nl-cta i{width:6px;height:6px;border-radius:50%;background:var(--gr)}
+.menu-btn{display:none;align-items:center;height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--ln);background:none;font-size:14px;font-weight:600;cursor:pointer}
+.mm{position:fixed;inset:0;z-index:55;background:var(--bg);display:flex;flex-direction:column;justify-content:space-between;padding:108px clamp(20px,4.4vw,64px) 32px;animation:mmIn .42s var(--edr)}
+.mm-l{display:block;padding:12px 0;border-bottom:1px solid var(--ln);font-family:var(--fd);font-weight:600;letter-spacing:-.04em;font-size:clamp(34px,10vw,56px);line-height:1.05}
+@keyframes mmIn{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;background:var(--bl);color:var(--tx);font-weight:600;font-size:15px;transition:background-color .2s var(--es),transform .16s var(--eo)}
+.btn:active{transform:scale(.97)}
+.btn svg,.tl svg,.case-i svg{width:16px;height:16px;flex:none;transition:transform .25s var(--eo)}
+.tl{position:relative;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px;color:var(--tx)}
+.tl::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:1px;background:currentColor;opacity:.35;transform-origin:0 50%;transition:opacity .2s var(--es)}
+
+/* hero */
+.hero{position:relative;min-height:max(680px,min(100svh,960px));display:flex;flex-direction:column;padding-top:76px;overflow:hidden}
+.hero-field{position:absolute;top:120px;right:-2vw;width:min(58vw,940px);aspect-ratio:3/2;opacity:0;transition:opacity 1.6s var(--es) .2s;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%);pointer-events:none}
+.in .hero-field{opacity:1}
+.hero-field svg{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible}
+.pt1{fill:rgba(248,250,252,.2)}.pt2{fill:rgba(248,250,252,.45)}
+.lane{fill:none;stroke:rgba(248,250,252,.12);stroke-width:1}
+.crv{fill:none;stroke:var(--gr);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.in .crv{stroke-dashoffset:0;transition:stroke-dashoffset 1.8s var(--eio) .8s}
+.arr{fill:var(--gr);opacity:0}
+.in .arr{opacity:1;transition:opacity .4s var(--es) 2.45s}
+.hero-in{position:relative;flex:1;display:flex;flex-direction:column;gap:clamp(36px,4vw,56px);padding-top:28px;padding-bottom:clamp(40px,5vw,72px)}
+.hero-name{margin-top:auto;font-family:var(--fd);font-weight:700;font-size:clamp(56px,12vw,176px);line-height:.86;letter-spacing:-.06em}
+.hero-b{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
+.claim{grid-column:1 / span 6;font-family:var(--fd);font-weight:500;font-size:clamp(26px,2.6vw,40px);line-height:1.08;letter-spacing:-.035em;max-width:17ch}
+.hero-r{grid-column:8 / span 5;display:flex;flex-direction:column;gap:24px}
+.sub{color:var(--mu);font-size:16px;max-width:44ch}
+.ctas{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+
+/* clients */
+.cl-in{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;padding-top:24px;border-top:1px solid var(--ln)}
+.lg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:44px 16px}
+.lg-c{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
+.lg-i{height:64px;width:100%;display:flex;align-items:center;justify-content:center}
+.lg-i img{display:block;max-width:82%;height:auto;opacity:.92}
+.lg-c > span{font-size:12.5px;line-height:1.3;color:var(--mu);text-align:center}
+
+/* sections */
+.sec{padding-top:clamp(120px,14vw,208px)}
+.sg{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px}
+.sl{padding-top:16px}
+.sc{display:flex;flex-direction:column;gap:clamp(44px,5vw,72px);min-width:0}
+.lead{font-size:clamp(18px,1.5vw,21px);line-height:1.55;color:var(--mu);max-width:54ch}
+.lead b{color:var(--tx);font-weight:600}
+.rows{border-top:1px solid var(--ln)}
+.row{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--ln);font-size:15.5px;line-height:1.45}
+.row > span:last-child{color:var(--mu);font-size:14px;text-align:right}
+.row.two{grid-template-columns:120px minmax(0,1fr)}
+.row.two > span:last-child{color:var(--tx);font-size:15.5px;text-align:left}
+
+.cr{display:grid;grid-template-columns:120px minmax(0,1fr) auto 24px;gap:16px;align-items:baseline;width:100%;padding:14px 0;border:0;border-bottom:1px solid var(--ln);background:none;text-align:left;cursor:pointer;font-size:15.5px;line-height:1.45;color:var(--tx)}
+.cr-o{color:var(--mu);font-size:14px;text-align:right}
+.cr-v{align-self:center;display:inline-flex;justify-content:flex-end;color:var(--mu);transition:color .2s var(--es),transform .25s var(--eo)}
+.cr-v svg{width:15px;height:15px}
+.top{display:inline-flex;align-items:center;height:20px;margin-left:10px;padding:0 8px;border-radius:999px;border:1px solid rgba(34,197,94,.45);color:var(--gr);font-family:var(--fm);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;vertical-align:2px;white-space:nowrap}
+.stk{display:flex;flex-wrap:wrap;gap:14px 30px}
+.stk li{display:inline-flex;align-items:center;gap:10px;font-size:15.5px}
+.stk img{display:block;height:24px;width:auto;opacity:.92}
+
+/* certificate lightbox */
+.lb{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,56px)}
+.lb-f{position:relative;z-index:1;width:min(1000px,100%);display:flex;flex-direction:column;gap:16px;animation:lbIn .32s var(--eo)}
+.lb.out .lb-f,.lb.out .md-bg{animation:fadeOut .2s var(--es) forwards}
+.lb-f img{display:block;width:100%;height:auto;max-height:calc(100svh - 190px);object-fit:contain;border-radius:8px}
+.lb-c{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lb-c b{display:block;font-family:var(--fd);font-weight:600;font-size:19px;letter-spacing:-.02em;line-height:1.25}
+.lb-c small{display:block;margin-top:2px;font-size:14px;color:var(--mu)}
+@keyframes lbIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+
+/* about */
+.ab{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:stretch}
+.portrait{position:relative;align-self:stretch;aspect-ratio:4/5;border-radius:12px;background:var(--bg2);overflow:hidden}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.dm{display:inline-flex;align-items:center;gap:16px;align-self:flex-start;min-height:44px}
+.dm img{display:block;width:40px;height:auto;flex:none}
+.dm b{display:block;font-family:var(--fd);font-weight:600;font-size:19px;letter-spacing:-.025em;line-height:1.2}
+.dm small{display:block;font-size:14px;color:var(--mu)}
+.ab-t{display:flex;flex-direction:column;justify-content:space-between;gap:36px;min-width:0}
+.ab-top{display:flex;flex-direction:column;gap:28px}
+.sg-sub{margin-top:clamp(72px,8vw,120px)}
+.sl-n{margin-top:6px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.fact{display:flex;flex-direction:column;gap:6px}
+.fv{font-family:var(--fd);font-weight:600;font-size:clamp(30px,2.8vw,42px);letter-spacing:-.045em;line-height:1;font-variant-numeric:tabular-nums}
+.fl{font-size:14px;line-height:1.4;color:var(--mu)}
+
+/* services */
+.svc{border-top:1px solid var(--ln)}
+.sv{display:grid;grid-template-columns:48px minmax(0,5fr) minmax(0,6fr);gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--ln)}
+.sv-t{font-family:var(--fd);font-weight:600;font-size:clamp(20px,1.9vw,26px);letter-spacing:-.03em;line-height:1.15}
+.sv-d{color:var(--mu);font-size:15.5px;line-height:1.5}
+
+/* method */
+.mt{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:20px;padding-top:28px}
+.mt-line{position:absolute;left:0;right:0;top:0;height:1px;background:var(--ln);overflow:hidden}
+.mt-fill{position:absolute;inset:0;background:var(--bl);transform-origin:0 50%;transform:scaleX(0)}
+.in .mt-fill{transform:none;transition:transform 1.6s var(--eio) .3s}
+.mt-s{display:flex;flex-direction:column;gap:8px}
+.mt-w{font-family:var(--fd);font-weight:600;font-size:clamp(17px,1.4vw,20px);letter-spacing:-.03em;line-height:1.1}
+.mt-d{font-size:14px;line-height:1.45;color:var(--mu)}
+
+/* results */
+.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 24px}
+.fig{display:flex;flex-direction:column;gap:12px;padding-top:22px;border-top:1px solid var(--ln)}
+.fig-v{font-family:var(--fd);font-weight:600;font-size:clamp(44px,6vw,92px);letter-spacing:-.06em;line-height:.9;color:var(--gr);font-variant-numeric:tabular-nums}
+.fig-l{font-size:15px;line-height:1.45;color:var(--mu);max-width:34ch}
+.cases{border-top:1px solid var(--ln)}
+.case{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;width:100%;padding:24px 0;border:0;border-bottom:1px solid var(--ln);background:none;text-align:left;cursor:pointer}
+.case-t{display:block;font-family:var(--fd);font-weight:600;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.035em;line-height:1.1}
+.case-s{display:block;margin-top:6px;font-size:14px;color:var(--mu)}
+.case-i{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid var(--ln);transition:background-color .2s var(--es),border-color .2s var(--es)}
+
+/* testimonials */
+.difs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;border-top:1px solid var(--ln)}
+.difs li{display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid var(--ln);font-size:16.5px;line-height:1.4}
+.difs li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--gr);transform:translateY(-2px)}
+.car{min-width:0}
+.car-t{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;margin-right:calc(-1 * clamp(20px,4.4vw,64px));padding-right:clamp(20px,4.4vw,64px);padding-bottom:4px}
+.car-t::-webkit-scrollbar{display:none}
+.car-t::after{content:"";flex:0 0 1px}
+.car-t:focus-visible{outline-offset:6px}
+.pf .vc{flex:0 0 clamp(286px,31vw,420px);scroll-snap-align:start;display:flex;flex-direction:column;gap:22px;margin:0;padding:28px;border:1px solid var(--ln);border-radius:16px;background:var(--bg2)}
+.vc-lw{height:36px;display:flex;align-items:center}
+.vc-lw img{display:block;height:auto;max-height:36px;opacity:.92}
+.vc-q{flex:1;font-size:16.5px;line-height:1.6;color:var(--tx)}
+.vc-f{display:flex;flex-direction:column;gap:2px;padding-top:18px;border-top:1px solid var(--ln)}
+.vo-name{font-family:var(--fd);font-weight:600;font-size:18px;letter-spacing:-.02em}
+.vo-role{font-size:14px;color:var(--mu)}
+.car-c{display:flex;align-items:center;gap:16px;margin-top:28px}
+.cbar{position:relative;flex:1;height:2px;border-radius:2px;background:var(--ln);overflow:hidden}
+.cthumb{position:absolute;left:0;top:0;bottom:0;width:30%;background:var(--tx);border-radius:2px}
+.icb:disabled{opacity:.3;cursor:default}
+.icb{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid var(--ln);background:none;cursor:pointer;transition:background-color .2s var(--es),color .2s var(--es),transform .16s var(--eo)}
+.icb:active{transform:scale(.95)}
+.icb svg{width:17px;height:17px}
+.qa{animation:qa .44s var(--eo)}
+.qb{animation:qb .44s var(--eo)}
+@keyframes qa{from{opacity:0;filter:blur(4px)}to{opacity:1;filter:none}}
+@keyframes qb{from{opacity:0;filter:blur(4px)}to{opacity:1;filter:none}}
+
+/* philosophy */
+.ph-q{font-family:var(--fd);font-weight:600;font-size:clamp(36px,6vw,96px);letter-spacing:-.05em;line-height:1}
+.w{opacity:.15;transition:opacity .45s var(--es)}
+.w.lit{opacity:1}
+
+/* contact */
+.ct-h{font-family:var(--fd);font-weight:700;font-size:clamp(44px,8vw,128px);letter-spacing:-.055em;line-height:.92}
+.ct-b{display:flex;flex-direction:column;gap:30px;max-width:560px}
+.ct-links{display:flex;flex-wrap:wrap;gap:4px 32px}
+.ct-links .tl{color:var(--mu)}
+.ct-links .pend{display:inline-flex;align-items:center;min-height:44px;font-size:15px;color:var(--di)}
+.ft{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px 24px;margin-top:clamp(120px,14vw,208px);padding:24px 0 32px;border-top:1px solid var(--ln)}
+
+/* modal */
+.md{position:fixed;inset:0;z-index:90;display:flex;align-items:flex-end;justify-content:center}
+.md-bg{position:absolute;inset:0;width:100%;border:0;padding:0;background:rgba(8,12,24,.78);cursor:pointer;animation:fadeIn .3s var(--es)}
+.md-p{position:relative;width:min(1080px,100%);max-height:calc(100% - 28px);overflow-y:auto;overscroll-behavior:contain;background:var(--bg);border:1px solid var(--ln);border-bottom:0;border-radius:20px 20px 0 0;animation:sheetUp .46s var(--edr)}
+.md.out .md-bg{animation:fadeOut .26s var(--es) forwards}
+.md.out .md-p{animation:sheetDown .26s var(--eo) forwards}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes sheetUp{from{transform:translate3d(0,100%,0)}to{transform:none}}
+@keyframes sheetDown{from{transform:none}to{transform:translate3d(0,100%,0)}}
+.md-head{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px clamp(20px,4vw,56px);background:var(--bg);border-bottom:1px solid var(--ln)}
+.md-body{padding:clamp(28px,4vw,56px)}
+.md-t{font-family:var(--fd);font-weight:700;font-size:clamp(36px,5vw,72px);letter-spacing:-.055em;line-height:.95}
+.md-big{display:block;margin-top:24px;font-family:var(--fd);font-weight:600;font-size:clamp(48px,6vw,88px);letter-spacing:-.06em;line-height:.9;color:var(--gr);font-variant-numeric:tabular-nums}
+.md-cap{display:block;margin-top:10px;font-size:15px;color:var(--mu)}
+.md-sec{display:grid;grid-template-columns:180px minmax(0,1fr);gap:clamp(16px,3vw,40px);padding:28px 0;border-top:1px solid var(--ln)}
+.md-sec h3{font-family:var(--fd);font-weight:600;font-size:20px;letter-spacing:-.025em;line-height:1.2}
+.md-sec p{font-size:clamp(17px,1.4vw,19px);line-height:1.55;max-width:60ch}
+.md-ul li{padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu);font-size:16px}
+.md-ul li:first-child{padding-top:0}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px}
+.re{display:flex;flex-direction:column;gap:6px}
+.re b{font-family:var(--fd);font-weight:600;font-size:clamp(30px,3vw,42px);letter-spacing:-.05em;line-height:1;color:var(--gr);font-variant-numeric:tabular-nums}
+.re span{font-size:14px;color:var(--mu)}
+.md-src{margin-top:20px}
+
+@media (hover:hover) and (pointer:fine){
+  .nl:hover{color:var(--tx)}
+  .btn:hover{background:var(--blh)}
+  .btn:hover svg,.tl:hover svg{transform:translate3d(3px,0,0)}
+  .tl:hover::after{opacity:1}
+  .ct-links .tl:hover{color:var(--tx)}
+  .cr:hover .cr-v{color:var(--tx);transform:translate3d(2px,-2px,0)}
+  .case:hover .case-i{background:var(--bl);border-color:var(--bl)}
+  .icb:hover{background:var(--tx);color:var(--bg)}
+}
+@media (max-width:1100px){
+  .mt{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:36px}
+  .lg{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .lg{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 8px}
+  .lg-i{height:52px}
+  .lg-c > span{font-size:11.5px}
+}
+@media (max-width:900px){
+  .nav-r .nl{display:none}
+  .menu-btn{display:inline-flex}
+  .hero-b,.cl-in,.sg,.ab,.vo{grid-template-columns:1fr}
+  .claim,.hero-r{grid-column:auto}
+  .sl{padding-top:0}
+  .portrait{max-width:340px}
+  .md-sec{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .pf{font-size:16px}
+  .hero{min-height:max(640px,min(100svh,880px))}
+  .hero-field{top:84px;left:-50%;right:auto;width:150%;-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 88%);mask-image:linear-gradient(180deg,#000 30%,transparent 88%)}
+  .ctas .btn{flex:1 1 100%}
+  .row{grid-template-columns:84px minmax(0,1fr)}
+  .row > span:last-child{grid-column:2;text-align:left;margin-top:-8px}
+  .row.two > span:last-child{margin-top:0}
+  .row.two .stk{grid-column:2}
+  .cr{grid-template-columns:84px minmax(0,1fr) 20px;gap:2px 12px}
+  .cr-o{grid-column:2;grid-row:2;text-align:left}
+  .cr-v{grid-column:3;grid-row:1}
+  .stk{gap:12px 22px}
+  .difs{grid-template-columns:1fr}
+  .pf .vc{flex-basis:84%;padding:22px}
+  .car-c .mono{display:none}
+  .sv{grid-template-columns:36px minmax(0,1fr);gap:6px 12px}
+  .sv-d{grid-column:2}
+  .mt{grid-template-columns:1fr;padding-top:0;row-gap:0}
+  .mt-line{display:none}
+  .mt-s{display:grid;grid-template-columns:36px minmax(0,1fr);gap:2px 12px;padding:14px 0;border-bottom:1px solid var(--ln)}
+  .mt-d{grid-column:2}
+  .figs{grid-template-columns:1fr}
+  .ft{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{transform:none}
+  .in .rv{transition:opacity .2s linear}
+  .li{transform:none;opacity:0}
+  .in .li{opacity:1;transition:opacity .2s linear}
+  .crv{stroke-dashoffset:0!important;transition:none!important}
+  .arr{opacity:1!important;transition:none!important}
+  .in .mt-fill{transition:none}
+  .qa,.qb{animation:fadeIn .15s linear}
+  .md-p,.md.out .md-p,.mm,.lb-f{animation:fadeIn .15s linear}
+}
+</style>
+<noscript><style>#app{display:none}</style></noscript>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#F8FAFC;font-family:sans-serif;padding:40px">Activá JavaScript para ver el portfolio de Lautaro Martínez.</p></noscript>
+<template id="tpl">
+<div class="pf" ref="{{h.root}}">
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav {{navCls}}">
+<div class="wrap nav-in">
+<a class="logo" href="#top" aria-label="Lautaro Martínez — inicio">
+<svg class="lm" viewBox="16 20 160 134" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 30L38 40V122H84L95 140H20Z"></path><path fill="none" stroke="currentColor" stroke-width="18" stroke-miterlimit="6" d="M65 116V56L101 94L151 44"></path><path fill="currentColor" d="M136 80.3L154 62.3V150H136Z"></path><path fill="none" stroke="currentColor" stroke-width="18" d="M112 117L145 84"></path><path fill="none" stroke="#2563EB" stroke-width="18" d="M101 94L151 44"></path><path fill="#2563EB" d="M169.8 25.2L164.1 59.1L135.9 30.9Z"></path></svg>
+<span>Lautaro Martínez</span>
+</a>
+<nav class="nav-r" aria-label="Principal">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="4">
+<a class="nl {{l.cls}}" href="{{l.href}}">{{l.label}}</a>
+</sc-for>
+<a class="nl nl-cta" href="#contact"><i></i>Hablemos</a>
+<button type="button" class="menu-btn" aria-expanded="{{menuAria}}" aria-controls="mobile-menu" onClick="{{h.toggleMenu}}">{{menuLabel}}</button>
+</nav>
+</div>
+</header>
+
+<sc-if value="{{menu}}" hint-placeholder-val="{{ false }}">
+<div class="mm" id="mobile-menu">
+<nav aria-label="Menú">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="4">
+<a class="mm-l" href="{{l.href}}" onClick="{{h.closeMenu}}">{{l.label}}</a>
+</sc-for>
+<a class="mm-l" href="#contact" onClick="{{h.closeMenu}}">Contacto</a>
+</nav>
+<a class="btn" href="https://wa.me/5493434598164?text=Hola%20Lautaro%2C%20quiero%20conversar%20sobre%20mi%20estrategia%20de%20paid%20media." target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+</div>
+</sc-if>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero {{rv.hero}}" id="top" data-k="hero" ref="{{h.io}}" aria-labelledby="hero-title">
+<div class="hero-field" aria-hidden="true">
+<svg viewBox="0 0 1200 800" focusable="false">
+<path class="pt1" d="{{field.d1}}"></path>
+<path class="pt2" d="{{field.d2}}"></path>
+<path class="lane" d="{{field.l1}}"></path>
+<path class="lane" d="{{field.l2}}"></path>
+<path class="lane" d="{{field.l3}}"></path>
+<path class="crv" d="M924 400C990 400 1032 372 1066 300S1142 150 1190 118" pathLength="1"></path>
+<path class="arr" d="M1202 110L1191.1 128.4L1180.6 112.8Z"></path>
+</svg>
+</div>
+<div class="wrap hero-in">
+<p class="mono rv" style="transition-delay: 60ms">Paid Media Manager — Digitalmix</p>
+<h1 class="hero-name" id="hero-title">
+<span class="ln"><span class="li" style="transition-delay: 120ms">Lautaro</span></span>
+<span class="ln"><span class="li" style="transition-delay: 200ms">Martínez</span></span>
+</h1>
+<div class="hero-b">
+<p class="claim rv" style="transition-delay: 420ms">Datos que se traducen en crecimiento.</p>
+<div class="hero-r rv" style="transition-delay: 500ms">
+<p class="sub">Ayudo a marcas, ecommerce y negocios en crecimiento a escalar sus resultados con paid media, optimización continua y lectura inteligente de métricas.</p>
+<div class="ctas">
+<a class="btn" href="https://wa.me/5493434598164?text=Hola%20Lautaro%2C%20quiero%20conversar%20sobre%20mi%20estrategia%20de%20paid%20media." target="_blank" rel="noopener">Hablemos<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<a class="tl" href="#results">Ver resultados</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CLIENTES -->
+<section class="{{rv.clients}}" data-k="clients" ref="{{h.io}}" aria-label="Marcas con las que trabajé">
+<div class="wrap">
+<div class="cl-in rv">
+<p class="mono">Marcas con las que trabajé</p>
+<ul class="lg">
+<li class="lg-c"><span class="lg-i"><img src="assets/la-botica.png" alt="La Botica del Pastelero" style="width: 54px" loading="lazy"></span><span>La Botica del Pastelero</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/fluke.png" alt="Fluke" style="width: 132px" loading="lazy"></span><span>Fluke Argentina</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/colabella.png" alt="Colabella" style="width: 63px" loading="lazy"></span><span>Colabella</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/hudson.png" alt="Hudson" style="width: 86px" loading="lazy"></span><span>Hudson</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/chocolar.png" alt="Chocolar" style="width: 57px" loading="lazy"></span><span>Chocolar</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/vairo-bikes.png" alt="Vairo Bikes" style="width: 113px" loading="lazy"></span><span>Vairo Bikes</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/vairo-padel.png" alt="Vairo Padel" style="width: 50px" loading="lazy"></span><span>Vairo Padel</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/apiter.png" alt="Laboratorio Apiter" style="width: 43px" loading="lazy"></span><span>Apiter</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/norcon.png" alt="Norcon" style="width: 103px" loading="lazy"></span><span>Norcon</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/damico.png" alt="D'Amico Sistemas" style="width: 73px" loading="lazy"></span><span>D'Amico Sistemas</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/chain-reaction.png" alt="Chain Reaction" style="width: 67px" loading="lazy"></span><span>Chain Reaction</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/logis-zar.png" alt="Logis-Zar" style="width: 61px" loading="lazy"></span><span>Logis-Zar</span></li>
+<li class="lg-c"><span class="lg-i"><img src="assets/palletiza.png" alt="Palletiza" style="width: 94px" loading="lazy"></span><span>Palletiza</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- 01 SOBRE MÍ -->
+<section class="sec {{rv.about}}" id="about" data-k="about" data-sec="about" ref="{{h.io}}" aria-labelledby="about-title">
+<div class="wrap sg">
+<p class="mono sl rv">01 — Sobre mí</p>
+<div class="sc">
+<h2 class="h2 rv" id="about-title">No solo armo campañas. Construyo sistemas de performance.</h2>
+<div class="ab">
+<div class="portrait rv" style="transition-delay: 100ms">
+<img src="assets/portrait.jpg" alt="Retrato de Lautaro Martínez" width="640" height="800" loading="lazy">
+</div>
+<div class="ab-t">
+<div class="ab-top">
+<p class="lead rv" style="transition-delay: 140ms">Soy <b>Paid Media Manager en Digitalmix</b>. Gestiono cuentas de marcas, ecommerce y negocios en crecimiento, y trato cada una como un sistema: <b>inversión, mensaje, medición y contexto comercial</b>. Combino análisis, creatividad y decisiones basadas en datos para transformar inversión publicitaria en crecimiento real.</p>
+<a class="dm rv" href="https://digitalmix.ar/" target="_blank" rel="noopener" style="transition-delay: 170ms"><img src="assets/digitalmix.png" alt="" width="40" height="39"><span><b>Digitalmix</b><small>Mi casa profesional hace 3 años · digitalmix.ar ↗</small></span></a>
+</div>
+<div class="facts rv" style="transition-delay: 200ms">
+<div class="fact"><span class="fv" data-to="3" ref="{{h.cnt}}">3</span><span class="fl">años en paid media</span></div>
+<div class="fact"><span class="fv" data-to="10" data-pre="+" ref="{{h.cnt}}">+10</span><span class="fl">cuentas gestionadas</span></div>
+<div class="fact"><span class="fv" data-to="7" data-suf="d" ref="{{h.cnt}}">7d</span><span class="fl">ciclo de revisión</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrap sg sg-sub">
+<div class="sl rv"><p class="mono">Trayectoria y certificaciones</p><p class="mono sl-n">Tocá una para verla</p></div>
+<div class="rows rv" style="transition-delay: 80ms">
+<div class="row"><span class="mono">Actual</span><span>Paid Media Manager</span><span>Digitalmix · 3 años</span></div>
+<sc-for list="{{certs}}" as="c" hint-placeholder-count="6">
+<button type="button" class="cr" aria-haspopup="dialog" onClick="{{c.open}}"><span class="mono">{{c.d}}</span><span>{{c.t}}<sc-if value="{{c.top}}" hint-placeholder-val="{{ false }}"><span class="top">Top 10</span></sc-if></span><span class="cr-o">{{c.o}}</span><span class="cr-v" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 12 4M5 4h7v7"></path></svg></span></button>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- 02 SERVICIOS -->
+<section class="sec {{rv.svc}}" id="services" data-k="svc" data-sec="services" ref="{{h.io}}" aria-labelledby="svc-title">
+<div class="wrap sg">
+<p class="mono sl rv">02 — Servicios</p>
+<div class="sc">
+<h2 class="h2 rv" id="svc-title">Qué hago.</h2>
+<ul class="svc rv" style="transition-delay: 100ms">
+<li class="sv"><span class="mono">01</span><span class="sv-t">Meta Ads</span><span class="sv-d">Campañas de paid social para ecommerce y generación de leads.</span></li>
+<li class="sv"><span class="mono">02</span><span class="sv-t">Google Ads</span><span class="sv-d">Búsqueda orientada a intención: llegar a quien ya busca lo que vendés.</span></li>
+<li class="sv"><span class="mono">03</span><span class="sv-t">Estrategia full-funnel</span><span class="sv-d">La pauta diseñada alrededor del objetivo real del negocio.</span></li>
+<li class="sv"><span class="mono">04</span><span class="sv-t">Tracking y medición</span><span class="sv-d">Eventos y conversiones ordenados en GA4 y GTM.</span></li>
+<li class="sv"><span class="mono">05</span><span class="sv-t">Optimización de ROAS y CPA</span><span class="sv-d">Mejor retorno y menor costo por venta o por lead.</span></li>
+<li class="sv"><span class="mono">06</span><span class="sv-t">Reporting y análisis</span><span class="sv-d">Seguimiento semanal e informe mensual a medida.</span></li>
+<li class="sv"><span class="mono">07</span><span class="sv-t">Creatividad orientada a conversión</span><span class="sv-d">Ángulos, mensajes y formatos que se testean y se miden.</span></li>
+</ul>
+<div class="rows rv" style="transition-delay: 140ms">
+<div class="row two"><span class="mono">Para</span><span>Ecommerce, marcas en crecimiento, emprendedores, pymes, marcas personales y negocios que quieren escalar ventas.</span></div>
+<div class="row two"><span class="mono">Stack</span><ul class="stk">
+<li><img src="assets/meta.png" alt="" width="34" height="24">Meta Ads</li>
+<li><img src="assets/google-ads.png" alt="" width="28" height="24">Google Ads</li>
+<li><img src="assets/ga4.png" alt="" width="21" height="24">GA4</li>
+<li><img src="assets/gtm.png" alt="" width="24" height="24">GTM</li>
+<li><img src="assets/tiendanube.png" alt="" width="33" height="24">Tiendanube</li>
+<li><img src="assets/shopify.png" alt="" width="22" height="24">Shopify</li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 03 MÉTODO -->
+<section class="sec {{rv.proc}}" id="process" data-k="proc" data-sec="process" ref="{{h.io}}" aria-labelledby="pr-title">
+<div class="wrap sg">
+<p class="mono sl rv">03 — Método</p>
+<div class="sc">
+<h2 class="h2 rv" id="pr-title">Medir. Leer. Actuar.</h2>
+<ol class="mt">
+<span class="mt-line" aria-hidden="true"><span class="mt-fill"></span></span>
+<li class="mt-s rv" style="transition-delay: 200ms"><span class="mono">01</span><span class="mt-w">Descubrir</span><span class="mt-d">Objetivo, oferta y contexto comercial.</span></li>
+<li class="mt-s rv" style="transition-delay: 260ms"><span class="mono">02</span><span class="mt-w">Analizar</span><span class="mt-d">Señales de pauta y analítica web.</span></li>
+<li class="mt-s rv" style="transition-delay: 320ms"><span class="mono">03</span><span class="mt-w">Estrategia</span><span class="mt-d">Hipótesis ordenadas por impacto.</span></li>
+<li class="mt-s rv" style="transition-delay: 380ms"><span class="mono">04</span><span class="mt-w">Lanzar</span><span class="mt-d">Cambios concretos en campañas.</span></li>
+<li class="mt-s rv" style="transition-delay: 440ms"><span class="mono">05</span><span class="mt-w">Medir</span><span class="mt-d">Eventos y fuentes en GA4 y GTM.</span></li>
+<li class="mt-s rv" style="transition-delay: 500ms"><span class="mono">06</span><span class="mt-w">Optimizar</span><span class="mt-d">Decisiones semanales.</span></li>
+<li class="mt-s rv" style="transition-delay: 560ms"><span class="mono">07</span><span class="mt-w">Escalar</span><span class="mt-d">Sin perder rentabilidad.</span></li>
+</ol>
+<p class="lead rv" style="transition-delay: 200ms">Revisión cada 7 días e informe mensual personalizado. Cada aprendizaje se convierte en la próxima decisión.</p>
+</div>
+</div>
+</section>
+
+<!-- 04 RESULTADOS -->
+<section class="sec {{rv.res}}" id="results" data-k="res" data-sec="results" ref="{{h.io}}" aria-labelledby="res-title">
+<div class="wrap sg">
+<p class="mono sl rv">04 — Resultados</p>
+<div class="sc">
+<h2 class="h2 rv" id="res-title">Más que campañas. Resultados reales.</h2>
+<div class="figs">
+<div class="fig rv" style="transition-delay: 80ms"><span class="fig-v" data-to="56.2" data-dec="1" data-pre="$" data-suf="M+" ref="{{h.cnt}}">$56.2M+</span><span class="fig-l">Facturación récord mensual en Tiendanube</span></div>
+<div class="fig rv" style="transition-delay: 140ms"><span class="fig-v" data-to="1080" data-pre="+" data-sep="," ref="{{h.cnt}}">+1,080</span><span class="fig-l">Órdenes mensuales desde canales pagos</span></div>
+<div class="fig rv" style="transition-delay: 200ms"><span class="fig-v" data-to="289" data-pre="+" ref="{{h.cnt}}">+289</span><span class="fig-l">Leads mensuales por formularios y WhatsApp</span></div>
+<div class="fig rv" style="transition-delay: 260ms"><span class="fig-v" data-to="100" data-suf="K+" ref="{{h.cnt}}">100K+</span><span class="fig-l">Visitas únicas mensuales desde Meta y Google</span></div>
+</div>
+<div class="cases rv" style="transition-delay: 120ms">
+<button type="button" class="case" aria-haspopup="dialog" onClick="{{h.openA}}"><span><span class="case-t">Caso ecommerce</span><span class="case-s">Tiendanube · Meta Ads · Google Ads · GA4</span></span><span class="case-i" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span></button>
+<button type="button" class="case" aria-haspopup="dialog" onClick="{{h.openB}}"><span><span class="case-t">Caso generación de leads</span><span class="case-s">Meta Ads · Google Ads · Formularios · WhatsApp</span></span><span class="case-i" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></span></button>
+</div>
+<p class="mono rv">Fuente: reporting mensual consolidado de las cuentas gestionadas. No corresponde a un único cliente.</p>
+</div>
+</div>
+</section>
+
+<!-- 05 TESTIMONIOS -->
+<section class="sec {{rv.voices}}" id="voices" data-k="voices" ref="{{h.io}}" aria-labelledby="vo-title">
+<div class="wrap sg">
+<p class="mono sl rv">05 — Testimonios</p>
+<div class="sc">
+<h2 class="h2 rv" id="vo-title">Por qué trabajar conmigo.</h2>
+<ul class="difs rv" style="transition-delay: 100ms" aria-label="Diferenciales">
+<li>Decisiones basadas en datos</li>
+<li>Visión de negocio y performance</li>
+<li>Mejora continua</li>
+<li>Orden, criterio y foco en resultados</li>
+<li>Conecto estrategia, medios y conversión</li>
+</ul>
+<div class="car rv" style="transition-delay: 160ms" onMouseEnter="{{h.carEnter}}" onMouseLeave="{{h.carLeave}}" onFocus="{{h.carFocus}}" onBlur="{{h.carBlur}}" onTouchStart="{{h.carTouch}}" onPointerDown="{{h.carTouch}}">
+<div class="car-t" ref="{{h.trk}}" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Testimonios de clientes" aria-live="{{carLive}}">
+<sc-for list="{{voices}}" as="v" hint-placeholder-count="4">
+<figure class="vc" role="group" aria-label="{{v.pos}}">
+<span class="vc-lw"><img src="{{v.logo}}" alt="{{v.name}}" style="width: {{v.lw}}" loading="lazy"></span>
+<blockquote class="vc-q">{{v.q}}</blockquote>
+<figcaption class="vc-f"><span class="vo-name">{{v.name}}</span><span class="vo-role">{{v.role}}</span></figcaption>
+</figure>
+</sc-for>
+</div>
+<div class="car-c">
+<span class="cbar" aria-hidden="true"><span class="cthumb" ref="{{h.thumb}}"></span></span>
+<span class="mono">12 clientes</span>
+<button type="button" class="icb" aria-label="{{carPlayLabel}}" onClick="{{h.carToggle}}"><sc-if value="{{carAuto}}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="4" y="3" width="2.6" height="10" rx=".6"></rect><rect x="9.4" y="3" width="2.6" height="10" rx=".6"></rect></svg></sc-if><sc-if value="{{carPaused}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3.2v9.6c0 .5.5.8.9.5l7.2-4.8c.4-.3.4-.8 0-1L5.9 2.7c-.4-.3-.9 0-.9.5z"></path></svg></sc-if></button>
+<button type="button" class="icb" aria-label="Testimonios anteriores" onClick="{{h.cPrev}}" disabled="{{cStart}}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4"></path></svg></button>
+<button type="button" class="icb" aria-label="Más testimonios" onClick="{{h.cNext}}" disabled="{{cEnd}}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 06 FILOSOFÍA -->
+<section class="sec {{rv.philo}}" id="philosophy" data-k="philo" ref="{{h.io}}" aria-labelledby="ph-title">
+<div class="wrap sg">
+<p class="mono sl rv">06 — Filosofía</p>
+<h2 class="ph-q" id="ph-title" ref="{{h.philo}}">
+<sc-for list="{{words}}" as="w" hint-placeholder-count="9"><span class="w {{w.cls}}">{{w.w}} </span></sc-for>
+</h2>
+</div>
+</section>
+
+<!-- 07 CONTACTO -->
+<section class="sec {{rv.contact}}" id="contact" data-k="contact" data-sec="contact" ref="{{h.io}}" aria-labelledby="ct-title">
+<div class="wrap sg">
+<p class="mono sl rv">07 — Contacto</p>
+<div class="sc">
+<h2 class="ct-h" id="ct-title">
+<span class="ln"><span class="li" style="transition-delay: 80ms">Construyamos algo</span></span>
+<span class="ln"><span class="li" style="transition-delay: 150ms">que rinda.</span></span>
+</h2>
+<div class="ct-b rv" style="transition-delay: 220ms">
+<p class="lead">Sin intermediarios ni formularios complejos. Contame tu objetivo de ventas o de leads y lo conversamos.</p>
+<div><a class="btn" href="https://wa.me/5493434598164?text=Hola%20Lautaro%2C%20quiero%20conversar%20sobre%20mi%20estrategia%20de%20paid%20media." target="_blank" rel="noopener">Hablemos por WhatsApp<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a></div>
+<div class="ct-links">
+<a class="tl" href="https://www.instagram.com/lauta.ads/" target="_blank" rel="noopener">Instagram ↗</a>
+<a class="tl" href="https://digitalmix.ar/" target="_blank" rel="noopener">Digitalmix ↗</a>
+</div>
+</div>
+</div>
+</div>
+<div class="wrap">
+<footer class="ft">
+<a class="logo" href="#top" aria-label="Volver al inicio">
+<svg class="lm" viewBox="16 20 160 134" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 30L38 40V122H84L95 140H20Z"></path><path fill="none" stroke="currentColor" stroke-width="18" stroke-miterlimit="6" d="M65 116V56L101 94L151 44"></path><path fill="currentColor" d="M136 80.3L154 62.3V150H136Z"></path><path fill="none" stroke="currentColor" stroke-width="18" d="M112 117L145 84"></path><path fill="none" stroke="#2563EB" stroke-width="18" d="M101 94L151 44"></path><path fill="#2563EB" d="M169.8 25.2L164.1 59.1L135.9 30.9Z"></path></svg>
+<span>Lautaro Martínez</span>
+</a>
+<p class="mono">© 2026 · Estrategia · Datos · Crecimiento real</p>
+</footer>
+</div>
+</section>
+
+</main>
+
+<sc-if value="{{caseOpen}}" hint-placeholder-val="{{ false }}">
+<div class="md {{mdCls}}" role="dialog" aria-modal="true" aria-labelledby="md-title" onKeyDown="{{h.mKey}}">
+<button type="button" class="md-bg" tabindex="-1" aria-label="Cerrar caso" onClick="{{h.close}}"></button>
+<div class="md-p">
+<div class="md-head">
+<p class="mono">{{cs.tag}}</p>
+<button type="button" class="icb" aria-label="Cerrar caso" onClick="{{h.close}}" ref="{{h.closeRef}}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"></path></svg></button>
+</div>
+<div class="md-body">
+<h2 class="md-t" id="md-title">{{cs.title}}</h2>
+<span class="md-big">{{cs.big}}</span>
+<span class="md-cap">{{cs.bigCap}}</span>
+<div style="height: 40px"></div>
+<sc-for list="{{cs.sections}}" as="s" hint-placeholder-count="6">
+<div class="md-sec">
+<h3>{{s.t}}</h3>
+<div>
+<sc-if value="{{s.hasBody}}" hint-placeholder-val="{{ true }}"><p>{{s.body}}</p></sc-if>
+<sc-if value="{{s.hasList}}" hint-placeholder-val="{{ false }}"><ul class="md-ul"><sc-for list="{{s.list}}" as="b"><li>{{b.x}}</li></sc-for></ul></sc-if>
+<sc-if value="{{s.isResults}}" hint-placeholder-val="{{ false }}"><div class="res"><sc-for list="{{cs.results}}" as="r"><div class="re"><b>{{r.v}}</b><span>{{r.l}}</span></div></sc-for></div><p class="mono md-src">Fuente: reporting mensual consolidado de las cuentas gestionadas.</p></sc-if>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{certOpen}}" hint-placeholder-val="{{ false }}">
+<div class="lb {{lbCls}}" role="dialog" aria-modal="true" aria-labelledby="lb-title" onKeyDown="{{h.lbKey}}">
+<button type="button" class="md-bg" tabindex="-1" aria-label="Cerrar certificado" onClick="{{h.lbClose}}"></button>
+<figure class="lb-f">
+<img src="{{cert.src}}" alt="{{cert.alt}}">
+<figcaption class="lb-c">
+<span><b id="lb-title">{{cert.t}}</b><small>{{cert.meta}}</small></span>
+<button type="button" class="icb" aria-label="Cerrar certificado" onClick="{{h.lbClose}}" ref="{{h.lbRef}}"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"></path></svg></button>
+</figcaption>
+</figure>
+</div>
+</sc-if>
+
+</div>
+</template>
+<script>!function(n){"function"==typeof define&&define.amd?define(n):n()}(function(){var n,t,e,i,r,o,f,u,c,a,s,h,l,p,y,d,v,_="http://www.w3.org/2000/svg",w="http://www.w3.org/1999/xhtml",m=null,g=void 0,b={},k=[],x=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,C=Array.isArray;function M(n,t){for(var e in t)n[e]=t[e];return n}function S(n){n&&n.parentNode&&n.parentNode.removeChild(n)}function $(t,e,i){var r,o,f,u={};for(f in e)"key"==f?r=e[f]:"ref"==f?o=e[f]:u[f]=e[f];if(arguments.length>2&&(u.children=arguments.length>3?n.call(arguments,2):i),"function"==typeof t&&t.defaultProps!=m)for(f in t.defaultProps)u[f]===g&&(u[f]=t.defaultProps[f]);return A(t,u,r,o,m)}function A(n,i,r,o,f){var u={type:n,props:i,key:r,ref:o,__k:m,__:m,__b:0,__e:m,__c:m,constructor:g,__v:f==m?++e:f,__i:-1,__u:0};return f==m&&t.vnode!=m&&t.vnode(u),u}function I(n){return n.children}function P(n,t){this.props=n,this.context=t}function E(n,t){if(t==m)return n.__?E(n.__,n.__i+1):m;for(var e;t<n.__k.length;t++)if((e=n.__k[t])!=m&&e.__e!=m)return e.__e;return"function"==typeof n.type?E(n):m}function F(n){if(n.__P&&n.__d){var e=n.__v,i=e.__e,r=[],o=[],f=M({},e);f.__v=e.__v+1,t.vnode&&t.vnode(f),B(n.__P,f,e,n.__n,n.__P.namespaceURI,32&e.__u?[i]:m,r,i==m?E(e):i,!!(32&e.__u),o),f.__v=e.__v,f.__.__k[f.__i]=f,G(r,f,o),e.__e=e.__=null,f.__e!=i&&H(f)}}function H(n){if((n=n.__)!=m&&n.__c!=m)return n.__e=n.__c.base=m,n.__k.some(function(t){if(t!=m&&t.__e!=m)return n.__e=n.__c.base=t.__e}),H(n)}function L(n){(!n.__d&&(n.__d=!0)&&r.push(n)&&!T.__r++||o!=t.debounceRendering)&&((o=t.debounceRendering)||f)(T)}function T(){try{for(var n,t=1;r.length;)r.length>t&&r.sort(u),n=r.shift(),t=r.length,F(n)}finally{r.length=T.__r=0}}function j(n,t,e,i,r,o,f,u,c,a,s){var h,l,p,y,d,v,_=i&&i.__k||k,w=t.length;for(c=O(e,t,_,c,w),h=0;h<w;h++)(p=e.__k[h])!=m&&(l=-1!=p.__i&&_[p.__i]||b,p.__i=h,v=B(n,p,l,r,o,f,u,c,a,s),y=p.__e,p.ref&&l.ref!=p.ref&&(l.ref&&Q(l.ref,m,p),s.push(p.ref,p.__c||y,p)),d==m&&y!=m&&(d=y),4&p.__u?(c=V(p,c,n),l.__e&&(l.__e=m)):"function"==typeof p.type&&v!==g?c=v:y&&(c=y.nextSibling),p.__u&=-7);return e.__e=d,c}function O(n,t,e,i,r){var o,f,u,c,a,s=e.length,h=s,l=0;for(n.__k=new Array(r),o=0;o<r;o++)(f=t[o])!=m&&"boolean"!=typeof f&&"function"!=typeof f?("string"==typeof f||"number"==typeof f||"bigint"==typeof f||f.constructor==String?f=n.__k[o]=A(m,f,m,m,m):C(f)?f=n.__k[o]=A(I,{children:f},m,m,m):f.constructor===g&&f.__b>0?f=n.__k[o]=A(f.type,f.props,f.key,f.ref?f.ref:m,f.__v):n.__k[o]=f,c=o+l,f.__=n,f.__b=n.__b+1,a=f.__i=z(f,e,c,h),u=m,-1!=a&&(h--,(u=e[a])&&(u.__u|=2)),u==m||u.__v==m?(-1==a&&(r>s?l--:r<s&&l++),"function"!=typeof f.type&&(f.__u|=4)):a!=c&&(a==c-1?l--:a==c+1?l++:(a>c?l--:l++,f.__u|=4))):n.__k[o]=m;if(h)for(o=0;o<s;o++)(u=e[o])!=m&&0==(2&u.__u)&&(u.__e==i&&(i=E(u)),U(u,u));return i}function V(n,t,e){var i,r;if("function"==typeof n.type){for(i=n.__k,r=0;i&&r<i.length;r++)i[r]&&(i[r].__=n,t=V(i[r],t,e));return t}n.__e!=t&&(t&&n.type&&!t.parentNode&&(t=E(n)),t=e.insertBefore(n.__e,t||m));do{t=t&&t.nextSibling}while(t!=m&&8==t.nodeType);return t}function z(n,t,e,i){var r,o,f,u=n.key,c=n.type,a=t[e],s=a!=m&&0==(2&a.__u);if(a===m&&null==u||s&&u==a.key&&c==a.type)return e;if(i>(s?1:0))for(r=e-1,o=e+1;r>=0||o<t.length;)if((a=t[f=r>=0?r--:o++])!=m&&0==(2&a.__u)&&u==a.key&&c==a.type)return f;return-1}function N(n,t,e){"-"==t[0]?n.setProperty(t,e==m?"":e):n[t]=e==m?"":"number"!=typeof e||x.test(t)?e:e+"px"}function R(n,t,e,i,r){var o,f;n:if("style"==t)if("string"==typeof e)n.style.cssText=e;else{if("string"==typeof i&&(n.style.cssText=i=""),i)for(t in i)e&&t in e||N(n.style,t,"");if(e)for(t in e)i&&e[t]==i[t]||N(n.style,t,e[t])}else if("o"==t[0]&&"n"==t[1])o=t!=(t=t.replace(h,"$1")),f=t.toLowerCase(),t=f in n||"onFocusOut"==t||"onFocusIn"==t?f.slice(2):t.slice(2),n.l||(n.l={}),n.l[t+o]=e,e?i?e[s]=i[s]:(e[s]=l,n.addEventListener(t,o?y:p,o)):n.removeEventListener(t,o?y:p,o);else{if(r==_)t=t.replace(/xlink(H|:h)/,"h").replace(/sName$/,"s");else if("width"!=t&&"height"!=t&&"href"!=t&&"list"!=t&&"form"!=t&&"tabIndex"!=t&&"download"!=t&&"rowSpan"!=t&&"colSpan"!=t&&"role"!=t&&"popover"!=t&&t in n)try{n[t]=e==m?"":e;break n}catch(n){}"function"==typeof e||(e==m||!1===e&&"-"!=t[4]?n.removeAttribute(t):n.setAttribute(t,"popover"==t&&1==e?"":e))}}function q(n){return function(e){if(this.l){var i=this.l[e.type+n];if(e[a]==m)e[a]=l++;else if(e[a]<i[s])return;return i(t.event?t.event(e):e)}}}function B(n,e,i,r,o,f,u,c,a,s){var h,l,p,y,d,v,_,w,b,x,$,A,F,H,L,T,O=e.type;if(e.constructor!==g)return m;128&i.__u&&(a=!!(32&i.__u),f=[c=e.__e=i.__e]),(h=t.__b)&&h(e);n:if("function"==typeof O){l=u.length;try{if(b=e.props,x=O.prototype&&O.prototype.render,$=(h=O.contextType)&&r[h.__c],A=h?$?$.props.value:h.__:r,i.__c?w=(p=e.__c=i.__c).__=p.__E:(x?e.__c=p=new O(b,A):(e.__c=p=new P(b,A),p.constructor=O,p.render=W),$&&$.sub(p),p.state||(p.state={}),p.__n=r,y=p.__d=!0,p.__h=[],p._sb=[]),x&&p.__s==m&&(p.__s=p.state),x&&O.getDerivedStateFromProps!=m&&(p.__s==p.state&&(p.__s=M({},p.__s)),M(p.__s,O.getDerivedStateFromProps(b,p.__s))),d=p.props,v=p.state,p.__v=e,y)x&&O.getDerivedStateFromProps==m&&p.componentWillMount!=m&&p.componentWillMount(),x&&p.componentDidMount!=m&&p.__h.push(p.componentDidMount);else{if(x&&O.getDerivedStateFromProps==m&&b!==d&&p.componentWillReceiveProps!=m&&p.componentWillReceiveProps(b,A),e.__v==i.__v||!p.__e&&p.shouldComponentUpdate!=m&&!1===p.shouldComponentUpdate(b,p.__s,A)){e.__v!=i.__v&&(p.props=b,p.state=p.__s,p.__d=!1),e.__e=i.__e,e.__k=i.__k,e.__k.some(function(n){n&&(n.__=e)}),k.push.apply(p.__h,p._sb),p._sb=[],p.__h.length&&u.push(p),c=E(i);break n}p.componentWillUpdate!=m&&p.componentWillUpdate(b,p.__s,A),x&&p.componentDidUpdate!=m&&p.__h.push(function(){p.componentDidUpdate(d,v,_)})}if(p.context=A,p.props=b,p.__P=n,p.__e=!1,F=t.__r,H=0,x)p.state=p.__s,p.__d=!1,F&&F(e),h=p.render(p.props,p.state,p.context),k.push.apply(p.__h,p._sb),p._sb=[];else do{p.__d=!1,F&&F(e),h=p.render(p.props,p.state,p.context),p.state=p.__s}while(p.__d&&++H<25);p.state=p.__s,p.getChildContext!=m&&(r=M(M({},r),p.getChildContext())),x&&!y&&p.getSnapshotBeforeUpdate!=m&&(_=p.getSnapshotBeforeUpdate(d,v)),L=h!=m&&h.type===I&&h.key==m?J(h.props.children):h,c=j(n,C(L)?L:[L],e,i,r,o,f,u,c,a,s),p.base=e.__e,e.__u&=-161,p.__h.length&&u.push(p),w&&(p.__E=p.__=m)}catch(n){if(u.length=l,e.__v=m,a||f!=m){if(n.then){for(e.__u|=a?160:128;c&&8==c.nodeType&&c.nextSibling;)c=c.nextSibling;f!=m&&(f[f.indexOf(c)]=m),e.__e=c}else if(f!=m)for(T=f.length;T--;)S(f[T])}else e.__e=i.__e;e.__k==m&&(e.__k=i.__k||[]),n.then||D(e),t.__e(n,e,i)}}else f==m&&e.__v==i.__v?(e.__k=i.__k,e.__e=i.__e):c=e.__e=K(i.__e,e,i,r,o,f,u,a,s);return(h=t.diffed)&&h(e),128&e.__u?void 0:c}function D(n){n&&(n.__c&&(n.__c.__e=!0),n.__k&&n.__k.some(D))}function G(n,e,i){for(var r=0;r<i.length;r++)Q(i[r],i[++r],i[++r]);t.__c&&t.__c(e,n),n.some(function(e){try{n=e.__h,e.__h=[],n.some(function(n){n.call(e)})}catch(n){t.__e(n,e.__v)}})}function J(n){return"object"!=typeof n||n==m||n.__b>0?n:C(n)?n.map(J):n.constructor!==g?null:M({},n)}function K(e,i,r,o,f,u,c,a,s){var h,l,p,y,d,v,k,x=r.props||b,M=i.props,$=i.type;if("svg"==$?f=_:"math"==$?f="http://www.w3.org/1998/Math/MathML":f||(f=w),u!=m)for(h=0;h<u.length;h++)if((d=u[h])&&"setAttribute"in d==!!$&&($?d.localName==$:3==d.nodeType)){e=d,u[h]=m;break}if(e==m){if($==m)return document.createTextNode(M);e=document.createElementNS(f,$,M.is&&M),a&&(t.__m&&t.__m(i,u),a=!1),u=m}if($==m)x===M||a&&e.data==M||(e.data=M);else{if(u="textarea"==$&&M.defaultValue!=m?m:u&&n.call(e.childNodes),!a&&u!=m)for(x={},h=0;h<e.attributes.length;h++)x[(d=e.attributes[h]).name]=d.value;for(h in x)d=x[h],"dangerouslySetInnerHTML"==h?p=d:"children"==h||h in M||"value"==h&&"defaultValue"in M||"checked"==h&&"defaultChecked"in M||R(e,h,m,d,f);for(h in M)d=M[h],"children"==h?y=d:"dangerouslySetInnerHTML"==h?l=d:"value"==h?v=d:"checked"==h?k=d:a&&"function"!=typeof d||x[h]===d||R(e,h,d,x[h],f);if(l)a||p&&(l.__html==p.__html||l.__html==e.innerHTML)||(e.innerHTML=l.__html),i.__k=[];else if(p&&(e.innerHTML=""),j("template"==i.type?e.content:e,C(y)?y:[y],i,r,o,"foreignObject"==$?w:f,u,c,u?u[0]:r.__k&&E(r,0),a,s),u!=m)for(h=u.length;h--;)S(u[h]);a&&"textarea"!=$||(h="value","progress"==$&&v==m?e.removeAttribute("value"):v!=g&&(v!==e[h]||"progress"==$&&!v||"option"==$&&v!=x[h])&&R(e,h,v,x[h],f),h="checked",k!=g&&k!=e[h]&&R(e,h,k,x[h],f))}return e}function Q(n,e,i){try{if("function"==typeof n){var r="function"==typeof n.__u;r&&n.__u(),r&&e==m||(n.__u=n(e))}else n.current=e}catch(n){t.__e(n,i)}}function U(n,e,i){var r,o;if(t.unmount&&t.unmount(n),(r=n.ref)&&(r.current&&r.current!=n.__e||Q(r,m,e)),(r=n.__c)!=m){if(r.componentWillUnmount)try{r.componentWillUnmount()}catch(n){t.__e(n,e)}r.base=r.__P=r.__n=m}if(r=n.__k)for(o=0;o<r.length;o++)r[o]&&U(r[o],e,i||"function"!=typeof n.type);i||S(n.__e),n.__c=n.__=n.__e=g}function W(n,t,e){return this.constructor(n,e)}function X(e,i,r){var o,f,u,c;i==document&&(i=document.documentElement),t.__&&t.__(e,i),f=(o="function"==typeof r)?m:r&&r.__k||i.__k,u=[],c=[],B(i,e=(!o&&r||i).__k=$(I,m,[e]),f||b,b,i.namespaceURI,!o&&r?[r]:f?m:i.firstChild?n.call(i.childNodes):m,u,!o&&r?r:f?f.__e:i.firstChild,o,c),G(u,e,c),e.props.children=m}n=k.slice,t={__e:function(n,t,e,i){for(var r,o,f;t=t.__;)if((r=t.__c)&&!r.__)try{if((o=r.constructor)&&o.getDerivedStateFromError!=m&&(r.setState(o.getDerivedStateFromError(n)),f=r.__d),r.componentDidCatch!=m&&(r.componentDidCatch(n,i||{}),f=r.__d),f)return r.__E=r}catch(t){n=t}throw n}},e=0,i=function(n){return n!=m&&n.constructor===g},P.prototype.setState=function(n,t){var e;e=this.__s!=m&&this.__s!=this.state?this.__s:this.__s=M({},this.state),"function"==typeof n&&(n=n(M({},e),this.props)),n&&M(e,n),n!=m&&this.__v&&(t&&this._sb.push(t),L(this))},P.prototype.forceUpdate=function(n){this.__v&&(this.__e=!0,n&&this.__h.push(n),L(this))},P.prototype.render=I,r=[],f="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,u=function(n,t){return n.__v.__b-t.__v.__b},T.__r=0,c=Math.random().toString(8),a="__d"+c,s="__a"+c,h=/(PointerCapture)$|Capture$/i,l=0,p=q(!1),y=q(!0),d=0,v={__proto__:null,render:X,hydrate:function n(t,e){X(t,e,n)},createElement:$,h:$,Fragment:I,createRef:function(){return{current:m}},isValidElement:i,Component:P,cloneElement:function(t,e,i){var r,o,f,u,c=M({},t.props);for(f in t.type&&t.type.defaultProps&&(u=t.type.defaultProps),e)"key"==f?r=e[f]:"ref"==f?o=e[f]:c[f]=e[f]===g&&u!=g?u[f]:e[f];return arguments.length>2&&(c.children=arguments.length>3?n.call(arguments,2):i),A(t.type,c,r||t.key,o||t.ref,m)},createContext:function(n){function t(n){var e,i;return this.getChildContext||(e=new Set,(i={})[t.__c]=this,this.getChildContext=function(){return i},this.componentWillUnmount=function(){e=m},this.shouldComponentUpdate=function(n){this.props.value!=n.value&&e.forEach(function(n){n.__e=!0,L(n)})},this.sub=function(n){e.add(n);var t=n.componentWillUnmount;n.componentWillUnmount=function(){e&&e.delete(n),t&&t.call(n)}}),n.children}return t.__c="__cC"+d++,t.__=n,t.Provider=t.__l=(t.Consumer=function(n,t){return n.children(t)}).contextType=t,t},toChildArray:function n(t,e){return e=e||[],t==m||"boolean"==typeof t||(C(t)?t.some(function(t){n(t,e)}):e.push(t)),e},options:t},typeof module<"u"?module.exports=v:self.preact=v});
+
+</script>
+<script>
+(function(){
+var P=window.preact,h=P.h,cache={},RX=/\{\{([\s\S]+?)\}\}/g,EX=/^\{\{([\s\S]+?)\}\}$/;
+window.DCLogic=P.Component;
+function ev(e,s){var f=cache[e];if(!f){f=cache[e]=new Function('$s','with($s){return ('+e+');}');}return f(s);}
+function ip(t,s){return t.replace(RX,function(m,e){var v=ev(e,s);return v==null?'':String(v);});}
+function ex(t){var m=t&&t.match(EX);return m?m[1]:null;}
+var EV={onfocus:'onfocusin',onblur:'onfocusout'};
+function comp(n){
+ if(n.nodeType===3){var t=n.nodeValue;return t.indexOf('{{')<0?{t:0,v:t}:{t:1,v:t};}
+ if(n.nodeType!==1)return null;
+ var tag=n.localName,kids=[];for(var i=0;i<n.childNodes.length;i++){var c=comp(n.childNodes[i]);if(c)kids.push(c);}
+ if(tag==='sc-for')return{t:2,l:ex(n.getAttribute('list')),as:n.getAttribute('as'),k:kids};
+ if(tag==='sc-if')return{t:3,v:ex(n.getAttribute('value')),k:kids};
+ var at=[];for(var j=0;j<n.attributes.length;j++){var a=n.attributes[j];if(a.name.indexOf('hint-')===0)continue;var e=ex(a.value);
+  var nm=a.name; if(EV[nm])nm=EV[nm];
+  at.push({n:nm,e:e,i:!e&&a.value.indexOf('{{')>=0,v:a.value});}
+ return{t:4,g:tag,a:at,k:kids};
+}
+function kids(k,s){var o=[];for(var i=0;i<k.length;i++){var r=run(k[i],s);if(Array.isArray(r))o.push.apply(o,r);else if(r!=null)o.push(r);}return o;}
+function run(d,s){
+ switch(d.t){
+ case 0:return d.v;
+ case 1:return ip(d.v,s);
+ case 2:var L=ev(d.l,s)||[],o=[];for(var i=0;i<L.length;i++){var c=Object.create(s);c[d.as]=L[i];o.push(h(P.Fragment,{key:i},kids(d.k,c)));}return o;
+ case 3:return ev(d.v,s)?kids(d.k,s):null;
+ case 4:var p={};for(var j=0;j<d.a.length;j++){var a=d.a[j];p[a.n]=a.e?ev(a.e,s):a.i?ip(a.v,s):a.v;}
+  if(p.disabled===false||p.disabled==null)delete p.disabled;
+  return h(d.g,p,kids(d.k,s));
+ }
+}
+var root=null;
+window.DCR={build:function(v){if(!root){var t=document.getElementById('tpl').content,a=[];for(var i=0;i<t.childNodes.length;i++){var c=comp(t.childNodes[i]);if(c&&!(c.t===0&&!c.v.trim()))a.push(c);}root=a;}return kids(root,v);}};
+})();
+</script>
+<script>
+const KEYS = ["hero","clients","about","svc","proc","res","voices","philo","contact"];
+const NAV = [["about","Perfil"],["services","Servicios"],["process","Método"],["results","Resultados"]];
+const VOICES = [
+  { name: "La Botica del Pastelero", logo: "assets/la-botica.png", lw: "34px", role: "Dirección General", q: "“Lautaro se destaca por su compromiso y por entender que no se trata solo de vender más, sino de hacerlo de forma rentable. Siempre está atento a los resultados y a cómo optimizar la inversión para conseguir un mejor retorno.”" },
+  { name: "Fluke Argentina", logo: "assets/fluke.png", lw: "93px", role: "Equipo Comercial B2B", q: "“Lautaro entendió rápidamente nuestros objetivos y los transformó en una estrategia enfocada en resultados. Destacamos su capacidad para optimizar la inversión y generar oportunidades comerciales cuidando siempre el costo y la rentabilidad de las campañas.”" },
+  { name: "Colabella", logo: "assets/colabella.png", lw: "44px", role: "Gerencia Comercial", q: "“Trabajar con Lautaro nos dio mucha tranquilidad. Es responsable, cercano y muy enfocado en resultados. Su trabajo estuvo siempre orientado a mejorar las ventas, cuidar la inversión y buscar una mayor rentabilidad en las campañas.”" },
+  { name: "Vairo Bikes", logo: "assets/vairo-bikes.png", lw: "80px", role: "Dirección de Marketing", q: "“Su trabajo va mucho más allá de generar contactos. Lautaro analiza costos, calidad de los leads y oportunidades reales de negocio para que la inversión publicitaria tenga sentido comercial.”" },
+  { name: "Vairo Padel", logo: "assets/vairo-padel.png", lw: "31px", role: "Responsable de E-commerce", q: "“Lautaro combina muy bien el análisis de datos con una mirada comercial. Busca constantemente mejorar el retorno de las campañas, entendiendo qué acciones realmente generan ventas y cuáles necesitan optimizarse.”" },
+  { name: "Norcon", logo: "assets/norcon.png", lw: "73px", role: "Gerencia Inmobiliaria", q: "“Trabajar con Lautaro es muy simple por su predisposición y claridad. Siempre busca mejorar el costo por contacto y conseguir oportunidades de mayor calidad, haciendo cada vez más eficiente nuestra inversión.”" },
+  { name: "Chain Reaction", logo: "assets/chain-reaction.png", lw: "47px", role: "Dirección de Cuentas", q: "“Valoramos mucho su capacidad para detectar oportunidades y tomar decisiones basadas en resultados. Su enfoque siempre estuvo puesto en hacer más eficiente la inversión y conseguir un crecimiento rentable de las ventas.”" },
+  { name: "Chocolar", logo: "assets/chocolar.png", lw: "37px", role: "Dirección Comercial", q: "“Destacamos su compromiso y seguimiento constante de las campañas. Su foco siempre estuvo en generar consultas reales, optimizar los costos y aprovechar al máximo el presupuesto disponible.”" },
+  { name: "Hudson", logo: "assets/hudson.png", lw: "61px", role: "Gerencia General", q: "“Es un profesional comprometido, analítico y orientado a resultados. No mira solamente cuánto venden las campañas, sino también cuánto cuesta conseguir esas ventas y cómo mejorar su rentabilidad.”" },
+  { name: "D'Amico Sistemas", logo: "assets/damico.png", lw: "52px", role: "Gerencia de Operaciones", q: "“Lautaro tiene una mirada muy orientada al negocio. No se queda únicamente con la cantidad de leads, sino que analiza su costo y calidad para buscar resultados que realmente sean rentables.”" },
+  { name: "Apiter", logo: "assets/apiter.png", lw: "27px", role: "Coordinación Comercial", q: "“Lautaro entiende muy bien la relación entre publicidad y negocio. Siempre trabajó buscando generar más ventas, optimizar los costos y conseguir el mejor retorno posible sobre nuestra inversión.”" },
+  { name: "Logis-Zar", logo: "assets/logis-zar.png", lw: "42px", role: "Dirección Logística", q: "“Valoramos especialmente su cercanía y compromiso. Lautaro trabaja con una visión muy clara: transformar la inversión en publicidad en contactos de calidad y oportunidades comerciales concretas, buscando siempre la mayor eficiencia posible.”" }
+];
+const WORDS = ["Performance","no","es","gastar","más.","Es","aprender","más","rápido."];
+const CERTS = [
+  { d: "Feb 2024", t: "Carrera de Marketing Digital", o: "Coderhouse", top: true, src: "assets/cert-carrera.jpg", meta: "Coderhouse · 10 feb 2024 · 28 semanas · Top 10" },
+  { d: "Feb 2024", t: "Growth Marketing", o: "Coderhouse · Klar", top: true, src: "assets/cert-growth.jpg", meta: "Coderhouse, certificado por Klar · 10 feb 2024 · 36 horas · Top 10" },
+  { d: "Dic 2023", t: "Google Analytics Individual Qualification", o: "Google", top: false, src: "assets/cert-gaiq.jpg", meta: "Google · 15 dic 2023 · vigente hasta dic 2024" },
+  { d: "Dic 2023", t: "Publicidad en Redes Avanzado", o: "Coderhouse · Ualá", top: true, src: "assets/cert-publicidad-redes.jpg", meta: "Coderhouse, certificado por Ualá · 9 dic 2023 · 40,5 horas · Top 10" },
+  { d: "Dic 2023", t: "Certificación en Display de Google Ads", o: "Google Skillshop", top: false, src: "assets/cert-google-display.jpg", meta: "Google · 3 dic 2023 · vigente hasta dic 2024" },
+  { d: "Jul 2023", t: "Community Manager y Publicidad", o: "Coderhouse", top: false, src: "assets/cert-community.jpg", meta: "Coderhouse · 29 jul 2023 · 49,5 horas" }
+];
+const CASES = {
+  eco: {
+    tag: "Caso · Tiendanube · Meta Ads · Google Ads · GA4", title: "Crecimiento ecommerce", big: "$56.2M+", bigCap: "Facturación récord mensual · pico de ventas en Tiendanube",
+    sections: [
+      { t: "Contexto", body: "Tiendas online de pequeñas y grandes empresas, con inversión en Meta Ads y Google Ads." },
+      { t: "Desafío", body: "Vender más no alcanza: hay que vender de forma rentable. Escalar la facturación sin que el costo de cada venta se coma el margen." },
+      { t: "Estrategia", body: "Campañas diseñadas alrededor del objetivo real del negocio, con la medición ordenada desde el inicio: tráfico de la tienda, evento purchase en GA4 y CPA como norte." },
+      { t: "Ejecución", list: ["Revisión semanal de señales y priorización de hipótesis","Ajustes sobre audiencias, creatividades, presupuesto y testing","Seguimiento de compras en GA4 con GTM","Informe mensual con avances y próximos movimientos"] },
+      { t: "Resultados", results: true },
+      { t: "Aprendizaje", body: "La escala sana se decide en el costo por venta, no en el volumen." }
+    ],
+    results: [
+      { v: "$56.2M+", l: "Facturación récord mensual" },
+      { v: "+1,080", l: "Órdenes mensuales" },
+      { v: "0.8–1.4%", l: "Conversión promedio" },
+      { v: "≈2%", l: "Inversión sobre facturación" }
+    ]
+  },
+  lead: {
+    tag: "Caso · Meta Ads · Google Ads · Formularios · WhatsApp", title: "Generación de leads", big: "+289", bigCap: "Leads mensuales · formularios + clics y chats de WhatsApp",
+    sections: [
+      { t: "Contexto", body: "Empresas B2B, inmobiliarias, industria y servicios que necesitan oportunidades comerciales, no solo tráfico." },
+      { t: "Desafío", body: "La cantidad de leads no dice nada por sí sola. El objetivo: bajar el costo por contacto y subir la calidad de cada oportunidad." },
+      { t: "Estrategia", body: "Meta Ads y Google Ads orientados a contactos con intención real, por formularios y WhatsApp, cuidando costo y rentabilidad." },
+      { t: "Ejecución", list: ["Medición de formularios, clics y chats de WhatsApp","Análisis de costo por contacto y calidad del lead","Optimización semanal de inversión, segmentación y mensajes","Reporte mensual con avances y próximos movimientos"] },
+      { t: "Resultados", results: true },
+      { t: "Aprendizaje", body: "Un lead barato que no avanza es caro. La métrica que importa es la oportunidad comercial." }
+    ],
+    results: [
+      { v: "+289", l: "Leads mensuales" }
+    ]
+  }
+};
+
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function pad2(n) { return (n < 10 ? "0" : "") + n; }
+function rnd(seed) { let s = seed; return function () { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; }
+function buildField() {
+  const r = rnd(11);
+  const dot = (x, y, a) => "M" + (x - a).toFixed(1) + " " + y.toFixed(1) + "a" + a + " " + a + " 0 1 0 " + (2 * a).toFixed(2) + " 0a" + a + " " + a + " 0 1 0 " + (-2 * a).toFixed(2) + " 0";
+  const layer = (n, a0, a1) => {
+    let d = "";
+    for (let i = 0; i < n; i++) {
+      const u = Math.pow(r(), 0.85);
+      const x = 60 + u * 500;
+      const g = (r() + r() + r() - 1.5) / 1.5;
+      const sd = 240 - x * 0.3;
+      const y = 400 + g * sd;
+      const a = +(a0 + r() * (a1 - a0)).toFixed(2);
+      d += dot(x, y, a);
+    }
+    return d;
+  };
+  let l1 = "";
+  for (let k = 0; k < 7; k++) { const y = 340 + k * 20; const y0 = (400 + (y - 400) * 2.2).toFixed(1); l1 += "M480 " + y0 + "C530 " + y0 + " 540 " + y + " 570 " + y + "H636"; }
+  return { d1: layer(56, 0.7, 1.1), d2: layer(22, 1.2, 1.9), l1: l1, l2: "M650 370H776M650 390H776M650 410H776M650 430H776", l3: "M790 390H916M790 410H916" };
+}
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { seen: {}, navSolid: false, menu: false, caseOpen: null, closing: false, certOpen: null, cClosing: false, cStart: true, cEnd: false, carAuto: true, philo: 0, isStatic: false, active: "" };
+  }
+
+  _ensure() {
+    if (this._h) return;
+    const self = this;
+    this._secs = {};
+    this._seen = {};
+    this._field = buildField();
+    this._certOpeners = CERTS.map((_, i) => () => self._openCert(i));
+    this._h = {
+      lbRef: (el) => { self._lbBtn = el; },
+      lbClose: () => self._closeCert(),
+      lbKey: (e) => { if (e.key === "Escape") { e.stopPropagation(); self._closeCert(); } },
+      root: (el) => { self._root = el; },
+      io: (el) => { if (!el) return; const sk = el.getAttribute("data-sec"); if (sk) self._secs[sk] = el; self._observe(el); },
+      cnt: (el) => { if (el) self._observeCount(el); },
+      philo: (el) => { self._philo = el; },
+      closeRef: (el) => { self._closeBtn = el; },
+      toggleMenu: () => self.setState({ menu: !self.state.menu }),
+      closeMenu: () => { if (self.state.menu) self.setState({ menu: false }); },
+      openA: () => self._open("eco"),
+      openB: () => self._open("lead"),
+      close: () => self._close(),
+      mKey: (e) => { if (e.key === "Escape") { e.stopPropagation(); self._close(); } },
+      trk: (el) => {
+        if (self._trk === el) return;
+        if (self._trk && self._onTrk) self._trk.removeEventListener("scroll", self._onTrk);
+        self._trk = el;
+        if (el) {
+          self._onTrk = () => { if (self._trkRaf) return; self._trkRaf = requestAnimationFrame(() => { self._trkRaf = 0; self._carUpd(); }); };
+          el.addEventListener("scroll", self._onTrk, { passive: true });
+          if (typeof IntersectionObserver !== "undefined") {
+            if (self._carIO) self._carIO.disconnect();
+            self._carIO = new IntersectionObserver((en) => { self._carVis = en[0].isIntersecting; }, { threshold: 0.35 });
+            self._carIO.observe(el);
+          } else { self._carVis = true; }
+          requestAnimationFrame(() => self._carUpd());
+        }
+      },
+      thumb: (el) => { self._thumb = el; if (el) requestAnimationFrame(() => self._carUpd()); },
+      cPrev: () => self._carGo(-1),
+      cNext: () => self._carGo(1),
+      carEnter: () => { if (self._fine) self._carHover = true; },
+      carLeave: () => { self._carHover = false; },
+      carFocus: () => { self._carFoc = true; },
+      carBlur: (e) => { if (!e.currentTarget.contains(e.relatedTarget)) self._carFoc = false; },
+      carTouch: () => { self._touchTs = Date.now(); },
+      carToggle: () => { self.setState({ carAuto: !self.state.carAuto }); self._carReset(); }
+    };
+  }
+
+  _observe(el) {
+    const k = el.getAttribute("data-k");
+    if (!k) return;
+    if (typeof IntersectionObserver === "undefined") { this._mark(k); return; }
+    if (!this._obs) {
+      this._obs = new IntersectionObserver((en) => {
+        const add = [];
+        en.forEach((x) => { if (x.isIntersecting) { add.push(x.target.getAttribute("data-k")); this._obs.unobserve(x.target); } });
+        if (add.length) this._mark(add);
+      }, { rootMargin: "0px 0px -10% 0px", threshold: 0.04 });
+    }
+    this._obs.observe(el);
+  }
+
+  _mark(keys) {
+    let ch = false;
+    [].concat(keys).forEach((k) => { if (!this._seen[k]) { this._seen[k] = true; ch = true; } });
+    if (ch) this.setState({ seen: Object.assign({}, this._seen) });
+  }
+
+  _observeCount(el) {
+    if (typeof IntersectionObserver === "undefined") return;
+    if (!this._cobs) {
+      this._cobs = new IntersectionObserver((en) => {
+        en.forEach((x) => { if (x.isIntersecting) { this._cobs.unobserve(x.target); const t = x.target; setTimeout(() => this._count(t), 240); } });
+      }, { threshold: 0.6 });
+    }
+    this._cobs.observe(el);
+  }
+
+  _count(el) {
+    if (this._reduced || this.state.isStatic || el._done) return;
+    el._done = true;
+    const to = parseFloat(el.getAttribute("data-to"));
+    if (!isFinite(to)) return;
+    const dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+    const pre = el.getAttribute("data-pre") || "";
+    const suf = el.getAttribute("data-suf") || "";
+    const sep = el.getAttribute("data-sep") || "";
+    const fin = el.textContent;
+    const fmt = (v) => { let t = v.toFixed(dec); if (sep) t = t.replace(/\B(?=(\d{3})+(?!\d))/g, sep); return pre + t + suf; };
+    const t0 = performance.now();
+    const dur = 1200;
+    const step = (t) => {
+      const p = Math.min(1, (t - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 4);
+      el.textContent = p < 1 ? fmt(to * e) : fin;
+      if (p < 1) requestAnimationFrame(step);
+    };
+    el.textContent = fmt(0);
+    requestAnimationFrame(step);
+  }
+
+  _scrollEl() {
+    if (!this._inner && (this._tries || 0) < 30) {
+      this._tries = (this._tries || 0) + 1;
+      let p = this._root ? this._root.parentElement : null;
+      while (p && p !== document.body && p !== document.documentElement) {
+        const cs = getComputedStyle(p);
+        if (/(auto|scroll)/.test(cs.overflowY) && p.scrollHeight > p.clientHeight + 4) { this._inner = p; break; }
+        p = p.parentElement;
+      }
+    }
+    return this._inner || document.scrollingElement || document.documentElement;
+  }
+
+  _tick() {
+    const el = this._scrollEl();
+    const top = el.scrollTop;
+    const vh = this._inner ? this._inner.clientHeight : (window.innerHeight || 800);
+    const s = this.state;
+    const n = {};
+    const solid = top > 24;
+    if (solid !== s.navSolid) n.navSolid = solid;
+    if (!s.isStatic && this._philo) {
+      const r = this._philo.getBoundingClientRect();
+      const p = clamp((vh * 0.85 - r.top) / (vh * 0.5), 0, 1);
+      const lit = Math.round(p * WORDS.length);
+      if (lit !== s.philo) n.philo = lit;
+    }
+    let act = "";
+    NAV.concat([["contact", ""]]).forEach((x) => { const e = this._secs[x[0]]; if (e && e.getBoundingClientRect().top <= vh * 0.35) act = x[0]; });
+    if (act !== s.active) n.active = act;
+    if (Object.keys(n).length) this.setState(n);
+  }
+
+  _open(id) {
+    this._lf = document.activeElement;
+    this.setState({ caseOpen: id, closing: false });
+    const de = document.documentElement;
+    this._ov = de.style.overflow;
+    de.style.overflow = "hidden";
+    setTimeout(() => { if (this._closeBtn) this._closeBtn.focus(); }, 80);
+  }
+
+  _close() {
+    if (!this.state.caseOpen || this.state.closing) return;
+    this.setState({ closing: true });
+    setTimeout(() => {
+      this.setState({ caseOpen: null, closing: false });
+      document.documentElement.style.overflow = this._ov || "";
+      if (this._lf && this._lf.focus) this._lf.focus();
+    }, this._reduced ? 90 : 260);
+  }
+
+  _carUpd() {
+    const t = this._trk;
+    if (!t) return;
+    const cw = t.clientWidth, sw = t.scrollWidth, sl = t.scrollLeft;
+    if (this._thumb && sw > 0) {
+      this._thumb.style.width = Math.min(100, (cw / sw) * 100).toFixed(2) + "%";
+      this._thumb.style.transform = "translate3d(" + ((sl / cw) * 100).toFixed(2) + "%,0,0)";
+    }
+    const st = sl <= 2, en = sl >= sw - cw - 2;
+    if (st !== this.state.cStart || en !== this.state.cEnd) this.setState({ cStart: st, cEnd: en });
+  }
+
+  _carTick() {
+    const s = this.state;
+    if (!s.carAuto || s.isStatic || s.caseOpen || s.certOpen != null || this._carHover || this._carFoc || !this._carVis || document.hidden) return;
+    if (this._touchTs && Date.now() - this._touchTs < 8000) return;
+    const t = this._trk;
+    if (!t) return;
+    if (t.scrollLeft >= t.scrollWidth - t.clientWidth - 2) t.scrollTo({ left: 0, behavior: "smooth" });
+    else this._carGo(1, true);
+  }
+
+  _carReset() {
+    if (this._carTimer) clearInterval(this._carTimer);
+    this._carTimer = setInterval(() => this._carTick(), 5000);
+  }
+
+  _carGo(dir, auto) {
+    const t = this._trk;
+    if (!t || !t.firstElementChild) return;
+    if (!auto) this._carReset();
+    const step = t.firstElementChild.getBoundingClientRect().width + 20;
+    t.scrollBy({ left: dir * step, behavior: this._reduced ? "auto" : "smooth" });
+  }
+
+  _openCert(i) {
+    this._lfc = document.activeElement;
+    this.setState({ certOpen: i, cClosing: false });
+    const de = document.documentElement;
+    this._ovc = de.style.overflow;
+    de.style.overflow = "hidden";
+    setTimeout(() => { if (this._lbBtn) this._lbBtn.focus(); }, 80);
+  }
+
+  _closeCert() {
+    if (this.state.certOpen == null || this.state.cClosing) return;
+    this.setState({ cClosing: true });
+    setTimeout(() => {
+      this.setState({ certOpen: null, cClosing: false });
+      document.documentElement.style.overflow = this._ovc || "";
+      if (this._lfc && this._lfc.focus) this._lfc.focus();
+    }, this._reduced ? 90 : 200);
+  }
+
+  componentDidMount() {
+    this._reduced = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)").matches : false;
+    this._fine = window.matchMedia ? window.matchMedia("(hover: hover) and (pointer: fine)").matches : false;
+    if (this._reduced) this.setState({ carAuto: false });
+    this._carReset();
+    this._onScroll = () => {
+      if (this._raf) return;
+      this._raf = requestAnimationFrame(() => { this._raf = 0; this._tick(); });
+    };
+    document.addEventListener("scroll", this._onScroll, { passive: true, capture: true });
+    window.addEventListener("resize", this._onScroll, { passive: true });
+    this._onRs = () => this._carUpd();
+    window.addEventListener("resize", this._onRs, { passive: true });
+    const vh = window.innerHeight || 800;
+    const rh = this._root ? this._root.getBoundingClientRect().height : 0;
+    if (rh && rh <= vh * 1.02 + 40) { this._mark(KEYS); this.setState({ isStatic: true }); }
+    this._tick();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("scroll", this._onScroll, { capture: true });
+    window.removeEventListener("resize", this._onScroll);
+    window.removeEventListener("resize", this._onRs);
+    if (this._carTimer) clearInterval(this._carTimer);
+    if (this._carIO) this._carIO.disconnect();
+    if (this._trk && this._onTrk) this._trk.removeEventListener("scroll", this._onTrk);
+    if (this._obs) this._obs.disconnect();
+    if (this._cobs) this._cobs.disconnect();
+    if (this._raf) cancelAnimationFrame(this._raf);
+    document.documentElement.style.overflow = "";
+  }
+
+  renderVals() {
+    this._ensure();
+    const s = this.state;
+    const seen = s.seen || {};
+    const rv = {};
+    KEYS.forEach((k) => { rv[k] = seen[k] ? "in" : ""; });
+
+    const links = NAV.map((x) => ({ href: "#" + x[0], label: x[1], cls: s.active === x[0] ? "on" : "" }));
+
+    const voices = VOICES.map((v, i) => ({ q: v.q, name: v.name, role: v.role, logo: v.logo, lw: v.lw, pos: (i + 1) + " de " + VOICES.length }));
+
+    const pl = s.isStatic ? WORDS.length : s.philo;
+    const words = WORDS.map((w, i) => ({ w: w, cls: i < pl ? "lit" : "" }));
+
+    const c = CASES[s.caseOpen || "eco"];
+    const cs = {
+      tag: c.tag, title: c.title, big: c.big, bigCap: c.bigCap, results: c.results,
+      sections: c.sections.map((x) => ({ t: x.t, body: x.body || "", hasBody: !!x.body, hasList: !!x.list, list: (x.list || []).map((y) => ({ x: y })), isResults: !!x.results }))
+    };
+
+    return {
+      h: this._h,
+      rv: rv,
+      navCls: (s.navSolid || s.menu) ? "solid" : "",
+      links: links,
+      menu: !!s.menu,
+      menuAria: s.menu ? "true" : "false",
+      menuLabel: s.menu ? "Cerrar" : "Menú",
+      field: this._field,
+      voices: voices,
+      cStart: !!s.cStart,
+      carAuto: !!s.carAuto,
+      carPaused: !s.carAuto,
+      carLive: s.carAuto ? "off" : "polite",
+      carPlayLabel: s.carAuto ? "Pausar carrusel" : "Reproducir carrusel",
+      cEnd: !!s.cEnd,
+      words: words,
+      certs: CERTS.map((c, i) => ({ d: c.d, t: c.t, o: c.o, top: c.top, open: this._certOpeners[i] })),
+      certOpen: s.certOpen != null,
+      cert: (() => { const c = CERTS[s.certOpen == null ? 0 : s.certOpen]; return { src: c.src, alt: "Certificado: " + c.t, t: c.t, meta: c.meta }; })(),
+      lbCls: s.cClosing ? "out" : "",
+      caseOpen: !!s.caseOpen,
+      mdCls: s.closing ? "out" : "",
+      cs: cs
+    };
+  }
+}
+
+
+Component.prototype.render=function(){return DCR.build(this.renderVals());};
+preact.render(preact.h(Component,{}),document.getElementById('app'));
+</script>
+</body>
+</html>
